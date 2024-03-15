@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "MyFonts";
+  src: url("../fonts/Press_Start_2P/PressStart2P-Regular.ttf") format("truetype");
+}
+
+body {
+  background-image: url("../imgs/sibylle-hell-litegames-minesweeperworld-defaultbg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  font-family: "MyFonts", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  margin: 50px;
+}
+
+#game-container {
+  text-align: center;
+}
+
+h2{
+  margin: 30px;
+}
+
+h3{
+  margin: 30px;
+}
+
+button {
+  color: #363636;
+  background-color: #008489;
+  font-family: "MyFonts", sans-serif;
+  padding: 20px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+button:hover {
+  transform: translateY(5px);
+  background-color: #b22222;
+  color: #ececec;
+}
+
+.falling {
+  animation: fallDown 1.5s ease-out;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease-out;
+}
+
+.hidden {
+    display: none;
+  }
+
+@keyframes fallDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(0);
+    }
+  }
