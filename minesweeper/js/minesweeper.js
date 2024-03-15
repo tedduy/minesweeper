@@ -18,7 +18,7 @@ function logIn() {
     clickSound();
     document.body.classList.add('fade-out');
     setTimeout(() => {
-        window.location.href = '../minesweeper/html/Login.html';
+        window.location.href = '/minesweeper/html/Login.html';
     }, 500);
 }
 
