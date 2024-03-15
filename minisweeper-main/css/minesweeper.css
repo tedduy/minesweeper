@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "MyFonts";
+  src: url("../fonts/deluxefont/dlxfont.ttf") format("truetype");
+}
+
+body {
+  background-image: url("../imgs/minesweeper.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  font-family: "MyFonts", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+#board {
+  display: inline-grid;
+  padding: 10px;
+  grid-template-columns: repeat(var(--cols), 40px);
+  grid-template-rows: repeat(var(--rows), 40px);
+  gap: 4x;
+  background-color: lightgray;
+}
+
+#board div {
+  background-color: #333333;
+  width: 100%;
+  height: 100%;
+  border: 1px solid whitesmoke;
+
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#board div:hover {
+  cursor: pointer;
+  background-color: #777777;
+}
+
+#board .tile-clicked {
+  background-color: #888888;
+}
+
+.restartGame {
+  background: url("../imgs/4968aebbcaf258bc025e61d6b5b74bed.png") center center no-repeat;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  padding: 20px;
+  position: relative;
+  top: 0px;
+  left: -30px;
+}
+
+.restartGameButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.restartGame:hover {
+  cursor: pointer;
+}
+
+#difficulty-level {
+  padding: 5px;
+  border-radius: 20px;
+  font-family: "MyFonts", sans-serif;
+  margin: auto;
+}
+
+.tile-clicked {
+  background: darkgrey;
+}
+
+#logout{
+  border-radius: 50%;
+  transition: all .5s;
+}
+
+#logout:hover{
+  background-color: #333333;
+  color: aliceblue;
+}
+
+#muteButton:hover{
+  background-color: #333333;
+  color: aliceblue;
+}
+
+.x1 {
+  color: blue;
+}
+
+.x2 {
+  color: green;
+}
+
+.x3 {
+  color: red;
+}
+
+.x4 {
+  color: navy;
+}
+
+.x5 {
+  color: brown;
+}
+
+.x6 {
+  color: teal;
+}
+
+.x7 {
+  color: black;
+}
+
+.x8 {
+  color: gray;
+}
+.minesCheck {
+  background-color: red;
+}
